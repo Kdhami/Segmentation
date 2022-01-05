@@ -3,10 +3,13 @@
 ![segmentation](https://user-images.githubusercontent.com/96744665/148271272-daf7de98-c4b0-48e2-840e-350995c5e75b.jpg)
 ## [Dashboard](https://public.tableau.com/app/profile/gabriele.frattini/viz/MarketSegmentation_16395789417390/Dashboard)
 
+***
+
 ## Introduction
 In the context of clustering, the quality of variables will determine the quality of clusters. Variables that are irrelevant and trivial may hurt the discriminatory power of clustering technqiues and give less reliable results. In this project I’ll be using a dataset with 25 different customer features to perform my analysis on.
 The goal of this article is not only to gain insights from market segmentation applied to customer data, but also to examine the results of k-means clustering applied to the original data and then on the data transformed to fewer dimensions with factor analysis.
 
+***
 
 ## Project Summary
 - Built a dashboard for the business to monitor their customer data
@@ -15,6 +18,7 @@ The goal of this article is not only to gain insights from market segmentation a
 - Recommended products to market to the different target groups
 - Presented pros & cons with clustering on dimension-reduced data
 
+***
 
 ##Clustering on the original data
 I performed k-means clustering on the original data, except it was standardized since the alghoritm is sensetive to different units of measurement scales.
@@ -23,6 +27,7 @@ Four seems to be the optimal amount of clusters since the silhouette scores for 
 
 ![silhouette_viz1](https://user-images.githubusercontent.com/96744665/148271353-9ef93707-2557-40fc-89d6-d5fd29469bdb.png)
 
+***
 
 ## Market segments
 
@@ -51,6 +56,7 @@ Four seems to be the optimal amount of clusters since the silhouette scores for 
 
 ![kmeans_first](https://user-images.githubusercontent.com/96744665/148271660-3196b6f2-2438-4df9-b9ae-fe005b72c47b.png)
 
+***
 
 ## Pre-processing the data with factor analysis
 
@@ -62,6 +68,7 @@ Clustering on the dimension-reduced data then has the amazing potential to revea
 
 Would the business also be interested in building ML-models in the future with customer features as predictors, the business could benefit from reduced risk of overfitting and complexity in the models.
 
+***
 
 ## Extraction & rotation
 
@@ -70,6 +77,7 @@ Factor loadings were extracted with principal axis factoring and then rotated to
 There are mainly two types of rotation methods, first are orthogonal rotations, that searches for a linear combination of factors such that the variance of the loadings are maximized. The other are oblique rotations, that allow the factors to take any position in the factorial space and thus allowing them to correlate to each other. Since the dimensions in our data are of related contruct, oblimin and promax rotations were used after factor extraction.
 
 From a scree-plot I decided to extract four factors that could explain 47% of the variance. In order words, to reduce the dimensions from 25 to 4 we had to sacrifice 53% of the variability in the data. This is obviously going to effect the true structure of the data and “blur” some of the relationships but it’s the sacrifice we are willing to make in order to proceed the analysis.
+
 
 ### Factors interpretation
 
@@ -80,6 +88,7 @@ From a scree-plot I decided to extract four factors that could explain 47% of th
 
 ![factor_loadings](https://user-images.githubusercontent.com/96744665/148271998-55c60d04-77b3-4190-adb6-4584c0d81fcf.png)
 
+***
 
 ## Clustering on factor scores
 
@@ -97,6 +106,7 @@ Five clusters seems to be the mest optimal given the silhouette scores for each 
 
 ![cluster_on_factors](https://user-images.githubusercontent.com/96744665/148272226-8aa0a92c-6ba7-4f79-b6d1-35e47d4e83d9.png)
 
+***
 
 ## Conclusion
 Clustering on the original data gave us very insightful and specific descriptions to each of the different segments which could led to more accurate marketing towards these groups.
