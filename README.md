@@ -34,30 +34,28 @@ Four seems to be the optimal amount of clusters since the silhouette scores for 
 
 ![cluster1](https://user-images.githubusercontent.com/96744665/148271399-273fb2fc-15b9-43a3-98f9-39d30630face.jpg)
 
-**- Lower income families that have low spending habits but patterns of high web visits per month.**
-
-**- The current product stock is not relevant enough for this cluster, my recommendations are to collect data about searches on our website from this group and sell more relevant products, potentially family- and children related products**
+- Lower income families that have low spending habits but patterns of high web visits per month.
+- The current product stock is not relevant enough for this cluster, my recommendations are to collect data about searches on our website from this group and sell more relevant products, potentially family- and children related products
 
 
 ![cluster2](https://user-images.githubusercontent.com/96744665/148271465-05eb6857-d10a-4d88-88d3-2e800e43a872.jpg)
 
-**- Higher-income earners without children, our most profitable group that preferebly purchases products in-store or by catalog. Could be considered a more “old-school” group of customers that don’t like to shop on the internet**
-
-**- Continoue to distribute catalogs and allocate products in physical stores since there is still a big market for this**
+- Higher-income earners without children, our most profitable group that preferebly purchases products in-store or by catalog. Could be considered a more “old-school” group of customers that don’t like to shop on the internet
+- Continoue to distribute catalogs and allocate products in physical stores since there is still a big market for this
 
 
 ![cluster3](https://user-images.githubusercontent.com/96744665/148271531-55241573-2e67-4da9-a1d2-e609a882f387.jpg)
 
-**- Older customers with families that has been customers for a longer time. This group purchases mostly online but also in-store and responds very well with products on deals. Also has a particular interest for wine and gold.**
+- Older customers with families that has been customers for a longer time. This group purchases mostly online but also in-store and responds very well with products on deals. Also has a particular interest for wine and gold.
 
-**- Market more discounted wine- and gold products towards this cluster to increase sales.**
+- Market more discounted wine- and gold products towards this cluster to increase sales.
 
 
 ![cluster4](https://user-images.githubusercontent.com/96744665/148271598-217ba312-ffdc-4ed7-bc6c-55d40a46ae5e.jpg)
 
-**- High-income earners without children, are well diversited in spending and our most successful group in terms of marketing campaigns. Strongest patterns in wine- and meat purchases.**
+- High-income earners without children, are well diversited in spending and our most successful group in terms of marketing campaigns. Strongest patterns in wine- and meat purchases.
 
-**- Research what products were being used during campaign five and one analyze further why this group has responded so well in particular to these two campagins**
+- Research what products were being used during campaign five and one analyze further why this group has responded so well in particular to these two campagins
 
 ![kmeans_first](https://user-images.githubusercontent.com/96744665/148271660-3196b6f2-2438-4df9-b9ae-fe005b72c47b.png)
 
@@ -86,13 +84,10 @@ From a scree-plot I decided to extract four factors that could explain 47% of th
 
 ### Factors interpretation
 
-**- Factor 1 are variables that accounts for profits, sales and spending habits**
-
-**- Factor 2 accounts for wine-purchases and marketing campaigns and their success-rates**
-
-**- Factor 3 is describing loyality, families and customers that shops online with discounted prices**
-
-**- Factor 4 is describing a correlation only with market campagin 3, this seems to be an effect of removing potential multicollinearity between this campagin and the other four that could not be revealed in the original data**
+- Factor 1 are variables that accounts for profits, sales and spending habits
+- Factor 2 accounts for wine-purchases and marketing campaigns and their success-rates
+- Factor 3 is describing loyality, families and customers that shops online with discounted prices
+- Factor 4 is describing a correlation only with market campagin 3, this seems to be an effect of removing potential multicollinearity between this campagin and the other four that could not be revealed in the original data
 
 ![factor_loadings](https://user-images.githubusercontent.com/96744665/148271998-55c60d04-77b3-4190-adb6-4584c0d81fcf.png)
 
@@ -107,15 +102,11 @@ Five clusters seems to be the mest optimal given the silhouette scores for each 
 
 ## Redefining our clusters
 
-**- cluster 1 have very low spending habits and have not responded well to our market campaigns.**
-
-**- Cluster 2 are high-income earners with high spending habits, no children or smaller families and did not respond well on market campagin three.**
-
-**- Cluster 3 are families that preferebly shops online and on discounted products.**
-
-**- Cluster 4 have the strongest spending habits and have responded very well to all market campagins.**
-
-**- Cluster 5 are low-income earners and have weak spending habits but have responded particularly well to market campagin three. A further analysis is needed to find out what has been done different in this campaign and why it did so well in this cluster**
+- cluster 1 have very low spending habits and have not responded well to our market campaigns.
+- Cluster 2 are high-income earners with high spending habits, no children or smaller families and did not respond well on market campagin three.
+- Cluster 3 are families that preferebly shops online and on discounted products.
+- Cluster 4 have the strongest spending habits and have responded very well to all market campagins.
+- Cluster 5 are low-income earners and have weak spending habits but have responded particularly well to market campagin three. A further analysis is needed to find out what has been done different in this campaign and why it did so well in this cluster
 
 ![cluster_on_factors](https://user-images.githubusercontent.com/96744665/148272226-8aa0a92c-6ba7-4f79-b6d1-35e47d4e83d9.png)
 
