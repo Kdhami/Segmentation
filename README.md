@@ -14,7 +14,7 @@ The goal of this article is not only to gain insights from market segmentation a
 ## Project Summary
 - Built a dashboard for the business to monitor their customer data
 - Identified four different market segments on the original data
--Identified five generalized segments from factor scores
+- Identified five generalized segments from factor scores
 - Recommended products to market to the different target groups
 - Presented pros & cons with clustering on dimension-reduced data
 
